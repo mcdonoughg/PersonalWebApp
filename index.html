@@ -2,8 +2,42 @@
     <head>
         <title>My Page</title>
         <style>
+            body{
+               background-image: url("/images/bg2.jpg");
+               background-repeat: no-repeat;
+               background-size: cover;
+            }
+            .navul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(61, 96, 84);
+            }
+
+            .navli {
+                float: left;
+            }
+
+            .navli a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .navli a:hover:not(.active) {
+                background-color: rgb(83, 157, 131);
+            }
+
+            .active {
+                background-color: #334740;
+            }
             .flex-container1{
                 display: block;
+                border-radius: 5px;
+                background-color: rgba(240, 245, 245,0.85);
             }
             .flex-container2{
                 display: flex;
@@ -17,8 +51,17 @@
         </style>
     </head>
     <body>
+        <ul class="navul">
+            <li class="navli"><a href="#home" class="active">Home</a></li>
+            <li class="navli"><a href="#news">DACC Program Info</a></li>
+            <li class="navli"><a href="#contact">Projects</a></li>
+            <li class="navli"><a href="#contact">Resources</a></li>
+            <li class="navli" style="float:right"><a class="active" href="#about">App Dev & Programming</a></li>
+        </ul>
         <div class="flex-container1">
             <div class="flex-item">
+                <br><br>
+                <img src="/images/greg.jpg" width="100px"/>
                 The flexbox or flexible box model in CSS is a one-dimensional layout model that has flexible and efficient layouts with distributed spaces among items to control their alignment structure ie., it is a layout model that provides an easy and clean way to arrange items within a container. Flexbox can be useful for creating small-scales layouts & is responsive and mobile-friendly.
             </div>
             <div class="flex-item">
